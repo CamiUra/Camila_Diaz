@@ -17,7 +17,7 @@
 
 button {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(90, 90, 90);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -37,4 +37,10 @@ button:hover {
 
 .next {
     right: 10px;
+}
+body {
+    background-color: black;
+}
+p{
+    text-align: justify;
 }

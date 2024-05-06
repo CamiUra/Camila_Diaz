@@ -7,20 +7,11 @@ function updateCarousel() {
     carouselInner.style.transform = `translateX(${shift}%)`;
 }
 
-function prevImage() {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    updateCarousel();
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    updateCarousel();
-}
-
-function openImage(url) {
+function openImage(url) { /*Esto sirve para que la imagen al hacer click abra una ventana*/
     window.open(url, "_blank");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     updateCarousel();
 });
+const carousel = new bootstrap.Carousel('#myCarousel')
